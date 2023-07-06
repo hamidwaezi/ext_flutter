@@ -54,4 +54,9 @@ extension SizedBoxExtention on num {
   Duration toHours() => Duration(hours: round());
 
   Duration toDays() => Duration(days: round());
+
+  String toStringByMoreThen([int max = 9]) {
+    if (this <= max) return toString();
+    return '+$max';
+  }
 }
