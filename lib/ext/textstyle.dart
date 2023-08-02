@@ -23,6 +23,9 @@ extension TextStyleExtn on TextStyle {
   TextStyle onError(BuildContext context) =>
       copyWith(color: cs(context).onError);
 
+  TextStyle color(Color color) => copyWith(color: color);
+  TextStyle hexColor(int colorValue) => color(Color(colorValue));
+
   TextStyle get bold => copyWith(fontWeight: FontWeight.bold);
   TextStyle get normal => copyWith(fontWeight: FontWeight.normal);
 
