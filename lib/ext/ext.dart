@@ -9,3 +9,4 @@ export './num.dart';
 export './string.dart';
 export './textstyle.dart';
 export './theme.dart';
+export './enum.dart';
