@@ -27,7 +27,7 @@ extension ConsoleLoggerExtension on Object {
     _logger.log(
         Level.error,
         '${toString()}${extra.isNotEmpty ? '\t\t extra: $extra!' : ''}',
-        this,
-        stackTrace);
+        error: this,
+        stackTrace: stackTrace);
   }
 }
